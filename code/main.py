@@ -79,7 +79,7 @@ class PaperReaderProcessor:
         else:
             raise ValueError(f"Invalid long_context_llm type {config['long_context_llm']['type']}.")
         
-        self.embed_model = EmbeddingModel(local_model_path='/data/huxc/hf_model/bge-m3', 
+        self.embed_model = EmbeddingModel(local_model_path=config["local_embedding_model_path"], 
                                     device="cuda:1" if torch.cuda.is_available() else "cpu", 
                                     batch_size=16).embed_model
 
