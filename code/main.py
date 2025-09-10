@@ -195,8 +195,4 @@ class PaperReaderProcessor:
 # 使用示例
 if __name__ == "__main__":
 
-    # pdf_path = '/home/huxc/paper_agent/test_paper/pali.pdf'
     processor = PaperReaderProcessor('../config/config.json', '../config/api_keys.json')
-
-    # processor.process_query("nihao")
-    # pdb.set_trace()
