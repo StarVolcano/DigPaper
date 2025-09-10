@@ -38,8 +38,8 @@ For LayoutLMv3, since no official API is provided, we include a lightweight [scr
 
 3. Run:
 
-```
-./api.sh
+```bash
+$ ./api.sh
 ```
 This will start the service at http://127.0.0.1:8001/predict_batch/.
 
