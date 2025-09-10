@@ -1,0 +1,30 @@
+{
+    "nougat_api_url": "http://localhost:8503/predict/",
+    "layoutlm_api_url": "http://localhost:8001/predict_batch/",
+
+    "parser_llm":{
+        "type": "ollama",
+        "model_name": "qwen2.5:7b-instruct-fp16"
+    },
+
+    "parser_mllm":{
+        "type": "ollama",
+        "model_name": "qwen2.5vl:7b-fp16"
+    },
+
+    "agent_llm":{
+        "type": "openai_like",
+        "company": "xinghuo",
+        "model_name": "generalv3.5",
+        "model_url": "https://spark-api-open.xf-yun.com/v1/"
+    },
+
+    "long_context_llm":{
+        "type": "openai_like",
+        "company": "qwen",
+        "model_name": "qwen-turbo-2025-02-11",
+        "model_url": "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    },
+
+    "local_embedding_model_path": "/data/huxc/hf_model/bge-m3"
+}
